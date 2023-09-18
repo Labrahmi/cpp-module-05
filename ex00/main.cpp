@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 17:44:10 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/18 18:13:57 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:38:02 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,18 @@ int main(void)
         std::cerr << e.what() << '\n';
     }
     std::cout << bob << std::endl;
+    std::cout << std::endl;
+    try
+    {
+        Bureaucrat mim = Bureaucrat("Mim", 9);
+        mim.incrementGrade();
+        mim.incrementGrade();
+        mim.incrementGrade();
+        std::cout << mim << std::endl; //
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
     return 0;
 }

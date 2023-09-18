@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 16:42:15 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/18 18:04:28 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/18 18:17:54 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,6 @@ private:
 	const std::string name;
 	int grade;
 };
-
-// You will provide getters for both these attributes: getName() and getGrade(). Implement also two member functions to increment or decrement the bureaucrat grade. If
-// the grade is out of range, both of them will throw the same exceptions as the constructor
 
 std::ostream &operator<<(std::ostream &o, Bureaucrat const &i);
 
