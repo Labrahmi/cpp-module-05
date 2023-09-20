@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:25:23 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/20 17:38:02 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:23:49 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ public:
 	const int getGradeSign() const;
 	const int getGradeExec() const;
 	// 
-	void beSigned(Bureaucrat bureaucrat);
+	void beSigned(Bureaucrat &bureaucrat);
 	
 private:
 	const std::string name;

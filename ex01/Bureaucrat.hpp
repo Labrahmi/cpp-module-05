@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 16:42:15 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/20 18:04:15 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/20 19:23:44 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <iostream>
 #include <string>
-#include "Form.hpp"
 
 class Form;
 
