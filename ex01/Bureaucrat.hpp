@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 16:42:15 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/18 18:17:54 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/20 18:04:15 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 #include <iostream>
 #include <string>
+#include "Form.hpp"
+
+class Form;
 
 class Bureaucrat
 {
@@ -48,7 +51,8 @@ public:
 	void setGrade(int newGrade);
 	void incrementGrade();
 	void decrementGrade();
-
+	// 
+	void signForm(Form &form);
 private:
 	const std::string name;
 	int grade;

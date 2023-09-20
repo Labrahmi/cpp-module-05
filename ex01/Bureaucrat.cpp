@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 16:42:09 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/18 20:24:55 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/20 18:04:10 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,20 @@ void Bureaucrat::decrementGrade()
 		throw GradeTooLowException();
 	else
 		this->grade++;
+}
+
+void Bureaucrat::signForm(Form &form)
+{
+	try
+	{
+		form.beSigned(*this);
+		std::cout << this->name << " signed " << form.getName() << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cout << "Bureaucrat " << this->name << " couldn't sign " << form.getName() << " form, because:" << std::endl;
+		std::cerr << e.what() << '\n';
+	}
 }
 /*
 ** --------------------------------- ACCESSOR ---------------------------------
