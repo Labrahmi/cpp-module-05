@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 08:24:22 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/21 12:19:53 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/21 16:50:15 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ void createAsciiArt(std::string target)
 		ofs << " ^^^^^^^ " << std::endl;
 		ofs << "    |    " << std::endl;
 		ofs.close();
+		std::cout << "Form has been Executed, check-out '" << target + "_shrubbery' file" << std::endl;
 	}
 	else
 		std::cerr << "Error creating the file!" << std::endl;
