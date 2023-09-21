@@ -6,7 +6,7 @@
 /*   By: ylabrahm <ylabrahm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 18:10:52 by ylabrahm          #+#    #+#             */
-/*   Updated: 2023/09/20 20:28:22 by ylabrahm         ###   ########.fr       */
+/*   Updated: 2023/09/21 07:53:46 by ylabrahm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** ------------------------------- CONSTRUCTOR --------------------------------
 */
 
-Form::Form() : name("Empty"), is_signed(false), gradeSign(150), gradeExec(150)
+Form::Form() : name("Undefined"), is_signed(false), gradeSign(150), gradeExec(150)
 {
 }
 
@@ -28,9 +28,9 @@ Form::Form(const Form &src) : name(src.name), gradeSign(src.gradeSign), gradeExe
 Form::Form(std::string name, int gradeSign, int gradeExec) : name(name), is_signed(false), gradeSign(gradeSign), gradeExec(gradeExec)
 {
     if (gradeSign > 150 || gradeExec > 150)
-        throw GradeTooHighException();
-    if (gradeSign < 1 || gradeExec < 1)
         throw GradeTooLowException();
+    if (gradeSign < 1 || gradeExec < 1)
+        throw GradeTooHighException();
 }
 
 /*
